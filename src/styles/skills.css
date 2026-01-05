@@ -1,0 +1,128 @@
+/* src/styles/skills.css */
+.skills-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0 80px;
+}
+
+.title-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skills-subtitle {
+  font-size: 1.1rem;
+  color: #a8a8a8;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.skills-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Stacked Columns */
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  color: #fff;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .skills-content {
+    padding: 0 20px;
+  }
+
+  .skills-columns {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .column-title {
+    font-size: 1.2rem;
+  }
+
+  .skill-item {
+    padding: 0.7rem;
+  }
+
+  .skill-icon {
+    font-size: 1.3rem;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-wrapper {
+    padding: 40px 0 60px;
+  }
+
+  .title-container {
+    margin-bottom: 2rem;
+  }
+
+  .skill-name {
+    font-size: 0.95rem;
+  }
+}

@@ -1,5 +1,3 @@
-// src/components/Layout.jsx - REFACTORED FOR SCROLLING SIDEBARS
-
 import Intro from "./Intro";
 import Navigation from "./Navigation";
 import Home from "../pages/Home";

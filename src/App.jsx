@@ -1,12 +1,9 @@
-// src/App.jsx - SIMPLIFIED
-import Layout from './components/Layout';
-import Preloader from './components/Preloader.jsx'
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
-    <Preloader />
-    <Layout />
+      <Layout />
     </>
   );
 }

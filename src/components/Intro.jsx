@@ -1,4 +1,3 @@
-// src/components/Intro.jsx
 const Intro = () => {
   return (
     <div className="intro-column">

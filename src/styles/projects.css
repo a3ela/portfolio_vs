@@ -8,14 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: sticky;
   top: 0;
   z-index: 50;
-
   padding: 0;
   background-color: #000;
-  height: 70px;
+  height: 100px;
   box-sizing: border-box;
 }
 
@@ -48,15 +46,12 @@
   }
 }
 
-/* --- Work Content Wrapper --- */
 .work-content {
   list-style: none;
   padding: 0;
   margin: 0;
-  /* padding-bottom: 1rem; */
 }
 
-/* --- Card Styling --- */
 .card {
   position: sticky;
   top: 0;
@@ -115,12 +110,19 @@
   flex: 1;
   height: 0;
   min-height: 150px;
-
   border-radius: 1rem;
   object-fit: cover;
 }
+.card__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
 
-/* --- Responsive --- */
+.card__icon:hover {
+  transform: rotate(-30deg);
+}
 @media screen and (max-height: 700px) {
   .card__head h1 {
     font-size: 1.8rem;
